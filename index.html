@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <button class="btn-show" onclick="show_pup()">send</button>
+    <div class="card" id="pup">
+      <img src="./free.jpg" alt="">
+      <h2>Programs</h2>
+      <p>In a vigorous attempt by Eshfaa company to support the startups
+        Providing comfort and support for employees
+        Specially designed program (Eshfaa Plus)
+        Specialized in providing all integrated medical services at the highest level of quality
+        And customer service management and follow-up case files for all employees and customers of the company
+        In this program, you can get special packages at special prices and discounts for all the following services:
+        _Clinic booking services in all governorates
+        _ X-ray services in radiology centers or request it at home
+        _ Lab services in the analysis centers or request them at home
+        _Operation booking and intensive care services
+        _Physiotherapy services
+        _Nursing services
+        _Providing monthly medication to employees
+        _Online consultation services with a group of the best qualified and experienced doctors and various specialties
+      </p>
+      <button class="btn-close" onclick="hide_pup()">Close</button>
+    </div>
+  </div>
+
+  <script>
+    function show_pup() {
+      document.getElementById("pup").classList.add('open')
+    }
+    function hide_pup() {
+      document.getElementById("pup").classList.remove('open')
+    }
+  </script>
+</body>
+
+</html>
